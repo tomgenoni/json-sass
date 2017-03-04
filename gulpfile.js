@@ -7,5 +7,5 @@ gulp.task("sass", function () {
     .pipe(sass({
       importer: [jsonImporter]
     }))
-    .pipe(gulp.dest('./'))
+    .pipe(gulp.dest('./build'))
 });
