@@ -1,0 +1,18 @@
+{
+  "name": "json-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "node-sass-json-importer": "^3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Tom Genoni <tom@atomeye.com> (http://atomeye.com)",
+  "license": "ISC"
+}

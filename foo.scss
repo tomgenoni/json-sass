@@ -1,0 +1,13 @@
+@function put($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+}
+
+@import "vars.json";
+
+body {
+    color: put($colors, ui, red);
+    font-family: put($font, sans);
+}

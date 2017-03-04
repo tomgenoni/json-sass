@@ -1,0 +1,11 @@
+{
+    "font": {
+        "sans" : "Helvetica",
+        "serif" : "Georgia"
+    },
+    "colors": {
+        "ui": {
+            "red": "#c33"
+        }
+    }
+}
