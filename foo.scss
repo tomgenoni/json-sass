@@ -1,13 +1,34 @@
-@function put($map, $keys...) {
+@function get($map, $keys...) {
     @each $key in $keys {
         $map: map-get($map, $key);
     }
     @return $map;
 }
 
+@function eval-breakpoint($value) {
+    @if type_of($value) == 'string' {
+        @return get($breakpoint, $value);
+    } @else {
+        @return $value;
+    }
+}
+
+@mixin tp-respond-below($width) {
+    @media (max-width: eval-breakpoint($width)) {
+        @content;
+    }
+}
+
+
 @import "vars.json";
 
 body {
-    color: put($colors, ui, red);
-    font-family: put($font, sans);
+    color: get($color, ui, base);
+    font-family: get($root, danger);
+}
+
+.foo {
+    @include tp-respond-below('medium') {
+        color: red;
+    }
 }

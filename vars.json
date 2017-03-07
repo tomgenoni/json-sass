@@ -1,11 +1,14 @@
 {
-    "font": {
-        "sans" : "Helvetica",
+    "root": {
+        "danger" : "red",
         "serif" : "Georgia"
     },
-    "colors": {
+    "color": {
         "ui": {
-            "red": "#c33"
+            "base": "#000"
         }
+    },
+    "breakpoint": {
+        "medium": "720px"
     }
 }
