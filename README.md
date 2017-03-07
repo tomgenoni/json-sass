@@ -1,3 +1,3 @@
 # JSON Sass
 
-Demo of json nested json variables consumed by Sass.
+Demo of nested json variables consumed by Sass.
